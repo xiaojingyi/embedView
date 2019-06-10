@@ -79,7 +79,7 @@ if __name__ == '__main__':
     parser.add_argument('--tsv', type=str, default='', help='tsv file for labels')
     parser.add_argument('--logdir', type=str, default='summary', help='Summaries log dir')
     parser.add_argument('--nmax', type=int, default=1000, help='max size of show')
-    parser.add_argument('--random', type=int, default=1, help='max size of show')
+    parser.add_argument('--random', type=int, default=1, help='random choose idx')
     FLAGS, unparsed = parser.parse_known_args()
     tf.app.run(main=main)
 
